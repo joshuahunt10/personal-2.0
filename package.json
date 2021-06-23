@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/joshuahunt10/personal-2.0/issues"
   },
-  "homepage": "https://github.com/joshuahunt10/personal-2.0#readme"
+  "homepage": "https://github.com/joshuahunt10/personal-2.0#readme",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
 }
