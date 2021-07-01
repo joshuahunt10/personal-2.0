@@ -1,65 +1,79 @@
-class Header extends HTMLElement {
-    constructor() {
-      super();
+const template = document.createElement('template');
+template.innerHTML = `
+<style>
+    nav {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        background-color:  #395B50;
     }
 
-    connectedCallback() {
-        // Add a way to navigate home
-        // TODO: Add a way to navigate home
-        // TODO: Add shadow DOM layer. a tag styles bleeding
-        this.innerHTML = `
-            <style>
-                nav {
-                    height: 60px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    background-color:  #395B50;
-                }
+    .logo-wrapper {
+        flex: 1;
+    }
 
-                ul li {
-                    list-style: none;
-                    display: inline;
-                }
+    .logo {
+        margin: 1rem;
+    }
 
-                a {
-                    color: #fff;
-                    margin: 0 10px;
-                    text-decoration: none;
-                }
+    .logo:hover {
+        cursor: pointer;
+    }
 
-                a:hover {
-                    text-decoration: underline;
-                }
-            </style>
-            <head>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="pages/about/about.html">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Resume
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages/this-website/this-website.html">
-                                This Website
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com">
-                                LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </head>
-        `;
+    ul li {
+        list-style: none;
+        display: inline;
+    }
+
+    a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+<head>
+    <nav>
+        <div class="logo-wrapper">
+            <a href="../home/index.html">
+                <img class="logo" src="../../assets/me_logo2.png" />
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a href="../about/about.html">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Resume
+                </a>
+            </li>
+            <li>
+                <a href="../this-website/this-website.html">
+                    This Website
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </nav>
+</head>
+`
+class Header extends HTMLElement {
+    constructor() {
+        super();
+        const shadowRoot = this.attachShadow({mode: 'closed'});
+        shadowRoot.appendChild(template.content.cloneNode(true));
     }
   }
 
-  customElements.define('header-component', Header);
+customElements.define('header-component', Header);
