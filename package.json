@@ -5,8 +5,10 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear -s"
+    "start": "sirv public --no-clear -s",
+    "deploy": "gh-pages -d public"
   },
+  "homepage": "https://joshuahunt10.github.io/me-site",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
