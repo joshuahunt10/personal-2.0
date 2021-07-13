@@ -45,6 +45,11 @@ template.innerHTML = `
         </div>
         <ul>
             <li>
+                <a href="../home/index.html">
+                    Home
+                </a>
+            </li>
+            <li>
                 <a href="../about/about.html">
                     About
                 </a>
@@ -60,7 +65,7 @@ template.innerHTML = `
                 </a>
             </li>
             <li>
-                <a href="https://linkedin.com">
+                <a href="https://www.linkedin.com/in/joshuahunt88/" target="linkedIn">
                     LinkedIn
                 </a>
             </li>
