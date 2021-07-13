@@ -1,26 +1,24 @@
 {
-  "name": "me_site",
+  "name": "svelte-app",
   "version": "1.0.0",
-  "description": "Personal website for me, 2.0.",
-  "main": "pages/home/index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear -s"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joshuahunt10/personal-2.0.git"
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0"
   },
-  "keywords": [
-    "peronal",
-    "portfolio"
-  ],
-  "author": "J. Hunt",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joshuahunt10/personal-2.0/issues"
-  },
-  "homepage": "https://github.com/joshuahunt10/personal-2.0#readme",
   "dependencies": {
-    "sass": "^1.35.1"
+    "sirv-cli": "^1.0.0",
+    "svelte-routing": "^1.6.0"
   }
 }
