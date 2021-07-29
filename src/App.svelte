@@ -22,14 +22,14 @@
                 <Link class="header-link" to="about" title="About page">About</Link>
             </li>
             <li>
-                <!-- TODO: Update with newest resume -->
-                <a class="header-link" href="https://drive.google.com/file/d/1GcPOF6HMZw7Vx1i0eet_ebTCNUVxxGAd/view?usp=sharing" target="resume" title="Resume">
+                <a class="header-link" href="https://drive.google.com/file/d/1CgUV619mNMSe0_enS2_9znGV6Y5M1CoT/view?usp=sharing" target="resume" title="Resume">
                     Resume
                 </a>
             </li>
-            <li>
+            <!-- Add later -->
+            <!-- <li>
                 <Link class="header-link" to="about-website" title="This website">This Website</Link>
-            </li>
+            </li> -->
             <li>
                 <a class="header-link" href="https://www.linkedin.com/in/joshuahunt88/" target="linkedIn" title="LinkedIn">
                     LinkedIn
