@@ -17,7 +17,7 @@
         flex-direction: column;
     }
     img {
-        width: 10rem;
+        width: 18rem;
         height: auto;
         border-radius: 100%;
     }

@@ -2322,13 +2322,13 @@ var app = (function () {
     		h: function hydrate() {
     			if (img.src !== (img_src_value = "images/headshot.jpg")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "My headshot");
-    			attr_dev(img, "class", "svelte-5d94u2");
+    			attr_dev(img, "class", "svelte-1vo5gj6");
     			add_location(img, file$3, 1, 4, 28);
-    			attr_dev(h1, "class", "svelte-5d94u2");
+    			attr_dev(h1, "class", "svelte-1vo5gj6");
     			add_location(h1, file$3, 2, 4, 82);
-    			attr_dev(h2, "class", "svelte-5d94u2");
+    			attr_dev(h2, "class", "svelte-1vo5gj6");
     			add_location(h2, file$3, 5, 4, 133);
-    			attr_dev(div, "class", "container svelte-5d94u2");
+    			attr_dev(div, "class", "container svelte-1vo5gj6");
     			add_location(div, file$3, 0, 0, 0);
     		},
     		m: function mount(target, anchor) {
